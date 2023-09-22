@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Розклад занять</title>
+    <!-- Мета-тег для встановлення коду символів (UTF-8) та заголовку сторінки -->
+<script>
+        function validatePassword() {                                     <!-----------Підтвердження пароля----------->
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm_password").value;
+            var error = document.getElementById("error");
+
+            if (password !== confirmPassword) {
+                error.innerHTML = "Passwords do not match!";
+                return false;
+            } else {
+                error.innerHTML = "";
+                return true;
+            }
+        }
+    </script>
+<style>
+ section {                         <!-----------Стиль форми--------->
+    background-color: orange;
+    margin: -400px 60px 0px 20px;
+    padding: 20px;
+    text-align: center;
+    float: right;
+    box-shadow:10px 10px 10px;
+    width: 11%;
+    
+        }
+table {                          <!------------Стиль таблиці-------->
+    border: 2px solid black;
+    background-color: orange;
+    border-collapse: collapse;
+    margin: 70px 0px 0px 60px;
+    box-shadow: 10px 10px 10px;
+}
+
+
+</style>
+</head>
+<center><body style="background-color:orange">
+
+
+    <h1>Розклад занять</h1>               <!------------Таблиця---------->
+    
+    <!-- Таблиця розкладу -->
+    <table border="1" width="600" height="400">
+
+        <caption>Розклад навчальної групи C-21</caption>
+
+        <tr>
+            <th>Час</th>
+            <th>Понеділок</th>
+            <th>Вівторок</th>
+            <th>Середа</th>
+            <th>Четвер</th>
+            <th>Пятниця</th>
+            <th>Субота</th>
+        </tr>
+        <tr>
+            <td>08:30-09:15
+<br>
+                09:20-10:05
+</br>
+             </td>
+            <td>ФВ(парк)</td>
+            <td>Іноземна мова</td>
+            <td>ЗВП</td>
+            <td>ФВ(парк)</td>
+            <td>ФВ(парк)</td>
+            <td>CP</td>
+        </tr>
+        <tr>
+<tr>
+            <td>10:25-11:10
+<br>
+               11:15-12:00
+</br>
+             </td>
+            <td>ЗВП</td>
+            <td>Право</td>
+            <td>ЗВП</td>
+            <td>Право</td>
+            <td>ТІМ</td>
+             <td>CP</td> 
+        </tr>
+        <tr>
+<tr>
+            <td>12:10-13:05
+<br>
+               13:10-13:55
+</br>
+             </td>
+            <td>ТС</td>
+            <td>ТІК</td>
+            <td>Прога</td>
+            <td>ТС</td>
+            <td>ТІМ</td>
+          <td>CP</td>
+        </tr>
+ <tr>
+<tr>
+            <td>16:10-16:55
+<br>
+                17:00-17:45
+</br>
+             </td>
+            <td>СР</td>
+            <td>СР</td>
+            <td>СР</td>
+            <td>Прога</td>
+            <td>СР</td>
+        </tr>
+        
+        <!-- Додайте інші рядки для решти днів і предметів -->
+   
+</table> </center>
+    <section>
+   <label for="name">Name:</label>
+ <form action="submit.php" method="post" onsubmit="return validatePassword()">        <!------------Форма---------->
+ <input type="text" id="name" name="name" required><br><br>
+
+    <label for="surname">Last name:</label>
+    <input type="text" id="surname" name="surname" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+        <span id="error" style="color: red;"></span><br><br>
+<input type="submit" value="Submit">
+  </form></section>
+
+    <!-- Валідація форми реєстрації може бути реалізована за допомогою JavaScript -->
+
+    <!-- Вставка зображення (логотипу) -->
+    <center><img src="https://kpi.ua/images/iszzi.png" alt="Логотип установи" width="300" height="300"></center>
+</form>
+
+    <!-- Коментарі для пояснення коду -->
+    <!-- 
+    - DOCTYPE визначає тип документа і кодування
+    - <html> відкриває основний контейнер сторінки
+    - <head> містить мета-інформацію та заголовок сторінки
+    - <title> встановлює заголовок в браузері
+    - <meta charset="UTF-8"> визначає кодування для коректного відображення тексту
+    - <body> містить вміст сторінки
+    - <table> створює таблицю
+    - <form> визначає форму реєстрації
+    - <label> створює підписи для полів вводу
+    - <input> встановлює поля для введення даних
+    - <img> вставляє зображення на сторінку
+    -->
+</body>
+</html>
+
+
