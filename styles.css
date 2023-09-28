@@ -1,0 +1,29 @@
+/* styles.css */
+
+/* 1. Форматування шрифту */
+.font-formatting {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 2. Форматування тексту */
+.text-formatting {
+    color: #1000FE;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* 3. Внутрішні та зовнішні відступи */
+.spacing {
+    padding: 20px;
+    margin: 10px;
+}
+
+/* 4. Рамки */
+.border {
+    border-style: dotted;
+    border-color: #FF0000;
+    border-width: 2px;
+    border-radius: 10px;
+}
