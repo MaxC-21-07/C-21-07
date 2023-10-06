@@ -1,29 +1,31 @@
-/* styles.css */
-
-/* 1. Форматування шрифту */
-.font-formatting {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+body{
+	background-color: #ECECEC;
 }
-
-/* 2. Форматування тексту */
-.text-formatting {
-    color: #1000FE;
-    text-align: center;
-    line-height: 1.5;
+.header{
+	background-image: url('https://ye.ua/images/news/_Sezon_polyivannya__scho_neobhidno_znati_1_2021_08_07_08_18_33.jpg');
+	background-size: cover;
 }
-
-/* 3. Внутрішні та зовнішні відступи */
-.spacing {
-    padding: 20px;
-    margin: 10px;
+a{
+	color: #0077FF;
+	text-decoration: none;
 }
-
-/* 4. Рамки */
-.border {
-    border-style: dotted;
-    border-color: #FF0000;
-    border-width: 2px;
-    border-radius: 10px;
+a:hover{
+	text-decoration: underline;
+}
+ul{
+	list-style-type: square;
+}
+input[type="text"], button{
+	background-color: #F2F2F2;
+	border: 1px solid #CCCCCC;
+	padding: 5px;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+th, td{
+	border: 1px solid #DDDDDD;
+	padding: 8px;
+	text-align: left;
 }
