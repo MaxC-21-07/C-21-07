@@ -1,91 +1,49 @@
-/* Загальні стилі для сторінки */
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ECECEC;
 }
 
-/* Стилі для заголовка */
-.header {
-    background-image: url('https://ye.ua/images/news/_Sezon_polyivannya__scho_neobhidno_znati_1_2021_08_07_08_18_33.jpg');
-    background-size: cover;
-    padding: 100px 0;
-    color: #fff;
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
     text-align: center;
+    line-height: 100px;
 }
 
-.header h1 {
-    margin: 0;
+.static {
+    background-color: red;
+    z-index: 1;
 }
 
-/* Стилі для навігації */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+.relative {
+    background-color: blue;
+    position: relative;
+    top: 500px;
+    left: 20px;
+    z-index: 2;
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
+.absolute {
+    background-color: green;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 3;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Стилі для списків */
-ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-/* Стилі для інпутів та кнопок форми */
-input[type="text"],
-input[type="email"],
-button {
-    background-color: #F2F2F2;
-    border: 1px solid #CCCCCC;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-button {
-    background-color: #0077FF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0055CC;
-}
-
-/* Стилі для таблиці */
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    border: 1px solid #DDDDDD;
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #0077FF;
-    color: #fff;
-}
-
-/* Стилі для підпису внизу сторінки */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
+.fixed {
+    background-color: orange;
+    position: fixed;
+    top: 10px;
+     right: 10px;
+     z-index: 4;
+} 
