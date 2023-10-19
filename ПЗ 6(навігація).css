@@ -1,0 +1,85 @@
+body {
+background-image: url('https://skyta.com.ua/trash/statica/77/karpatu2.jpg');}
+/* Стиль горизонтальної панелі навігації */
+
+.horizontal-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFF00;
+}
+.divclass
+{
+margin-bottom:200px;
+text-align:center;
+color: red;
+font-weight:bolder;
+}
+
+
+
+.horizontal-navigation li {
+  float: left;
+}
+
+.horizontal-navigation li a {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Змінити колір посилання на #111 (чорний) при наведенні курсора */
+.horizontal-navigation li a:hover {
+  background-color: #111;
+}
+
+/* Стиль вертикальної панелі навігації */
+.vertical-navigation {
+  background-color: #333;
+  color: #fff;
+  position:fixed;
+}
+
+.vertical-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFFF00;
+}
+
+.vertical-navigation li a {
+  display: block;
+  color: #red;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Змінити колір посилання при наведенні */
+.vertical-navigation li a:hover {
+  background-color: #FFFF00;
+  color: white;
+}
+
+/* Стиль розділювача */
+.divider {
+  border-right: 1px solid #fff;
+  height: 30px;
+  margin: 0 10px;
+}
+
+
+/* Стиль іконки */
+.icon {
+  text-align: center;
+  margin: 0 auto; /* Ця властивість центрує фотографію горизонтально */
+}
+
+.icon img {
+  width: 20px;
+  height: 20px;
+ margin: 5px;
+}
