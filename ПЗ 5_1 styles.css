@@ -1,0 +1,91 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ECECEC;
+}
+
+/* Стилі для заголовка */
+.header {
+    background-image: url('https://ye.ua/images/news/_Sezon_polyivannya__scho_neobhidno_znati_1_2021_08_07_08_18_33.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Стилі для навігації */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Стилі для списків */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Стилі для інпутів та кнопок форми */
+input[type="text"],
+input[type="email"],
+button {
+    background-color: #F2F2F2;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0077FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0055CC;
+}
+
+/* Стилі для таблиці */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #DDDDDD;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #0077FF;
+    color: #fff;
+}
+
+/* Стилі для підпису внизу сторінки */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
