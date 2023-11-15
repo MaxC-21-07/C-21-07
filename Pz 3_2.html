@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM і JavaScript Приклад</title>
+    <style>
+        .highlighted {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Простий HTML і JavaScript Приклад</h1>
+    <p class="paragraph">Це параграф з класом "paragraph".</p>
+    <ul id="myList">
+        <li>Пункт 1</li>
+        <li>Пункт 2</li>
+        <li>Пункт 3</li>
+    </ul>
+    <button id="myButton">Клацніть мене</button>
+
+    <script>
+        // Вибір елементів за їх id, класами, тегами
+        const heading = document.getElementById("heading");
+        const paragraphs = document.getElementsByClassName("paragraph");
+        const listItems = document.querySelectorAll("#myList li");
+        const button = document.getElementById("myButton");
+
+        // Зміна стилів
+        heading.style.color = "blue";
+
+        // Зміна тексту
+        paragraphs[0].textContent = "Це новий текст для параграфу.";
+
+        // Додавання класу для стилізації
+        listItems[1].classList.add("highlighted");
+
+        // Навігація по дереві DOM
+        const parentList = listItems[0].parentNode;
+        const nextItem = listItems[1].nextElementSibling;
+        const previousItem = listItems[2].previousElementSibling;
+
+        // Вивід інформації в консоль
+        console.log("Батьківський список:", parentList);
+        console.log("Наступний пункт:", nextItem);
+        console.log("Попередній пункт:", previousItem);
+
+        // Додавання обробників подій
+        button.addEventListener("click", function () {
+            alert("Ви клацнули на кнопку!");
+        });
+
+        for (let i = 0; i < listItems.length; i++) {
+            listItems[i].addEventListener("click", function () {
+                alert("Ви клацнули на пункт " + (i + 1));
+            });
+        }
+    </script>
+</body>
+</html>
