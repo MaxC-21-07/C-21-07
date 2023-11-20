@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роботи з фокусом</title>
+     <style>
+        #myButton {
+            padding: 10px 20px;
+            font-size: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="myInput" placeholder="Введіть текст тут">
+<button id="myButton">Кнопка</button>
+
+<script>
+    var myInput = document.getElementById("myInput");
+    var myButton = document.getElementById("myButton");
+    myInput.addEventListener("focus", function() {
+        console.log("Елемент отримав фокус!");
+    });
+    myInput.addEventListener("blur", function() {
+        console.log("Елемент втратив фокус!");
+    });
+</script>
+
+</body>
+</html>

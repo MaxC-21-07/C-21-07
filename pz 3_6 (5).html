@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Використання addEventListener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #Button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<button id="Button">Натисни мене</button>
+
+<script>
+    // Отримуємо кнопку за допомогою її id
+    var Button = document.getElementById("Button");
+
+    // Додаємо перший обробник події для кнопки
+    Button.addEventListener("click", function() {
+        // Виводимо повідомлення при виникненні події
+        console.log("Подія виникла!");
+    });
+
+    // Додаємо другий обробник події для тієї ж події
+    Button.addEventListener("click", function() {
+        // Виводимо ще одне повідомлення при тій же події
+        console.log("Ще один обробник події");
+    });
+</script>
+
+</body>
+</html>
