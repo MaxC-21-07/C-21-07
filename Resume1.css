@@ -1,0 +1,249 @@
+
+.fixed-button {
+    font-family:Serif;
+    position: fixed; /* Робимо кнопку фіксованою */
+    top: 700px; /* Відступ від верхнього краю сторінки */
+    right: 20px; /* Відступ від правого краю сторінки */
+    background-color: #0a0a23; /* Колір фону кнопки */
+    color: #fff; /* Колір тексту на кнопці */
+    padding: 10px 20px; /* Внутрішні відступи кнопки */
+    border: none; /* Видаляємо границю кнопки */
+    border-radius: 5px; /* Закруглюємо кути кнопки */
+    cursor: pointer; /* Змінюємо вигляд курсору при наведенні на кнопку */
+}
+
+/* Стилі для наведення на кнопку */
+.fixed-button:hover {
+    background-color: #f18973;
+}
+
+/* Reset some default styles and set a background color */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('network_-_12716 (1080p).gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.video video{
+  position: absolute ;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.video{
+  position: relative;
+  min-height: 100vh;
+}
+
+
+/* Style for the header section */
+header {
+     background-image: url(https://th.bing.com/th/id/R.32ccae9ab525576dc05cc3c123353c7e?rik=Tc3lkswD8LGhYw&riu=http%3a%2f%2fiitd.com.ua%2fwp-content%2fuploads%2f2021%2f06%2fitil.png&ehk=UvjgCRMEap%2fGhvhpo%2fLvcspYkYYFRuz2N03KlY7WGF8%3d&risl=&pid=ImgRaw&r=0);
+     background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    background-size:cover;
+    padding: 20px;
+font-family:Serif;
+}
+.head
+{
+color:rgb(252, 6, 6);
+font-size: 20px ;
+ text-align: center;
+ font-style: italic;
+}
+
+.main-nav
+{
+text-align:center;
+}
+
+/* Style for sections like About Me, Experience, and Education */
+.summary,
+.experience,
+.education {
+    background-image: url(https://cdn.pixabay.com/photo/2021/05/30/21/48/background-6297148_1280.jpg);
+    background-repeat: no-repeat;
+    position: center;
+    margin: 110px;
+    padding: 10px;
+    border-radius: 30px;
+    font-family:Serif;
+    color:LightGray;
+}
+.social-icons {
+  display: flex;
+  justify-content: right;
+}
+ 
+.social-icons a {
+  margin: 0 10px;
+}
+ver {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+}
+ form {
+    max-width: 600px; /* Increase the max-width */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px; /* Increase the padding */
+    border-radius: 10px; /* Increase the border-radius */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+ 
+.social-icons a:hover img {
+  transform: scale(1.2);
+}
+.navigation-horizontal {
+  background-color: blue;
+font-family:Serif;
+  padding: 10px 0;
+border-radius: 5px;
+}
+
+.navigation-horizontal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.divclass
+{
+margin-bottom:20px;
+text-align:center;
+color: red;
+font-weight:bolder;
+}
+
+.navigation-horizontal li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation-horizontal a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navigation-horizontal a:hover {
+  color: #ff6600;
+}
+
+
+
+/* Styles for heading elements */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Style for unordered lists */
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Styles for the progress bar indicators */
+.parrent {
+    width: 200px;
+    height: 10px;
+    background: #f2f2f2;
+    margin-bottom: 40px;
+    font-family:Serif;
+    border-radius: 10px;
+    outline-style: solid;
+}
+
+.child {
+    height: 100%;
+    background: red;
+    font-family:Serif;
+}
+
+.first {
+    width: 85%;
+}
+
+.second {
+    width: 40%;
+}
+
+.third{
+  width:20%;
+}
+.fourth{
+  width:70%;
+}
+.section-header{
+text-align:center;
+color: Brown;
+}
+.row{
+text-align:center;
+color:olive;
+font-family:Serif;
+}
+.rounded-photo {
+    border-radius: 50%;
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    float: left;  
+  margin-top: 60px;
+    margin-right: 40px; /* Adjust the margin to create space between photo and text */
+}
